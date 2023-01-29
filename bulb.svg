@@ -1,0 +1,55 @@
+<svg width="100%" min-height="0" viewBox="0 0 116 116" fill="none"
+    xmlns="http://www.w3.org/2000/svg">
+    <g id="Bulb">
+        <path id="bulb-bottom" d="M49.5674 107.252L71.0674 101.502" stroke="url(#paint0_linear_3_7)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" />
+        <path id="bulb-stroke" d="M43.4424 95.7516C43.4424 95.7516 60.1924 91.3766 71.0675 88.1266C75.8514 86.697 72.0307 80.7514 78.5673 74.8766C90.2874 64.3433 97.5983 50.9975 92.1923 34.0016C87.4346 19.0439 74.762 8.97799 58.0675 8.75164C41.0563 8.52099 27.6502 20.5265 23.5673 34.0016C20.7011 43.4613 22.1343 52.6207 24.8175 59.1264C28.1203 67.1342 31.2466 68.0102 36.6924 74.8766C36.6924 74.8766 41.5674 80.7514 41.5674 83.1264C45.8799 82.6264 44.1923 82.1672 51.1299 80.7514C58.0674 79.3356 57.6924 74.8766 57.6924 71.4389C57.6924 61.3764 57.6924 46.5014 57.6924 46.5014" stroke="url(#paint1_linear_3_7)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" />
+        <circle id="bulb-dot" cx="57.8171" cy="34.0351" r="4.21631" fill="#8AC532" />
+    </g>
+    <defs>
+        <linearGradient id="paint0_linear_3_7" x1="58" y1="8.74836" x2="58" y2="107.252" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#94D03B" />
+            <stop offset="1" stop-color="#70A91C" />
+        </linearGradient>
+        <linearGradient id="paint1_linear_3_7" x1="58" y1="8.74837" x2="58" y2="107.252" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#94D03B" />
+            <stop offset="1" stop-color="#70A91C" />
+        </linearGradient>
+
+        <style>
+                #bulb-stroke {
+        stroke-dasharray: 284.5408020019531;
+        stroke-dashoffset: 284.5408020019531;
+        animation: bulb__in 1s ease-in-out forwards;
+      }
+
+      #bulb-bottom {
+        stroke-dasharray: 22.255613327026367;
+        stroke-dashoffset: 22.255613327026367;
+        animation: bulb__in 0.25s ease-in-out forwards;
+      }
+
+      @keyframes bulb__in {
+        100% {
+          stroke-dashoffset: 0;
+        }
+      }
+
+      #bulb-dot {
+        transform: scale(0);
+        transform-box: fill-box;
+        transform-origin: center;
+        animation: bulb__dot__in 1s ease-in-out forwards;
+      }
+
+      @keyframes bulb__dot__in {
+        0%,
+        80% {
+          transform: scale(0);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+        </style>
+    </defs>
+</svg>
