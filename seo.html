@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SEO Icon</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .parentDiv {
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+      }
+
+      .wrapper {
+        width: 100%;
+        max-width: 1080px;
+      }
+
+      #front {
+        transform-box: fill-box;
+        transform-origin: center;
+        transform: translateX(12px);
+        opacity: 0;
+        animation: frontIn 1s ease-in-out forwards;
+      }
+
+      @keyframes frontIn {
+        0% {
+          opacity: 0;
+          transform: translateX(12px);
+        }
+
+        25% {
+          opacity: 1;
+          transform: translateX(12px);
+        }
+
+        100% {
+          opacity: 1;
+          transform: translateX(0px);
+        }
+      }
+
+      #back {
+        transform-box: fill-box;
+        transform-origin: center;
+        transform: translateX(-10px);
+        animation: backIn 1s ease-in-out forwards;
+      }
+
+      @keyframes backIn {
+        0% {
+          opacity: 0;
+          transform: translateX(-10px);
+        }
+
+        25% {
+          opacity: 1;
+          transform: translateX(-10px);
+        }
+
+        100% {
+          opacity: 1;
+          transform: translateX(0px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parentDiv">
+      <div class="wrapper">
+        <svg
+          width="100%"
+          min-height="0"
+          viewBox="0 0 72 72"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g id="seo">
+            <path
+              id="back"
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M46.9181 50.45C38.9375 50.45 32.468 43.9805 32.468 36C32.468 28.0195 38.9375 21.55 46.9181 21.55C54.8986 21.55 61.3681 28.0195 61.3681 36C61.3681 43.9805 54.8986 50.45 46.9181 50.45Z"
+              stroke="#D8EABE"
+              stroke-width="7"
+            />
+            <path
+              id="front"
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M25.2001 54C15.2589 54 7.20007 45.9411 7.20007 36C7.20007 26.0589 15.2589 18 25.2001 18C35.1412 18 43.2001 26.0589 43.2001 36C43.2001 45.9411 35.1412 54 25.2001 54Z"
+              fill="#94D03B"
+            />
+          </g>
+        </svg>
+      </div>
+    </div>
+  </body>
+</html>
