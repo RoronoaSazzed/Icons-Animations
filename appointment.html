@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Appointment Icon</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .parentDiv {
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+      }
+
+      .wrapper {
+        width: 100%;
+        max-width: 1080px;
+      }
+
+      #top-arrow {
+        stroke-dasharray: 57.57066345214844;
+        stroke-dashoffset: 57.57066345214844;
+        animation: arrowIn 1s ease-in-out forwards;
+      }
+
+      @keyframes arrowIn {
+        100% {
+          stroke-dashoffset: 0;
+        }
+      }
+
+      #down-arrow {
+        stroke-dasharray: 31.808212280273438;
+        stroke-dashoffset: 31.808212280273438;
+        animation: arrowIn 1s ease-in-out forwards;
+      }
+
+      #ball,
+      #head {
+        transform-box: fill-box;
+        transform-origin: center;
+        transform: scale(0);
+        animation: ball__head__in 0.5s 1s ease-in-out forwards;
+      }
+
+      @keyframes ball__head__in {
+        100% {
+          transform: scale(1);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parentDiv">
+      <div class="wrapper">
+        <svg
+          width="100%"
+          min-height="0"
+          viewBox="0 0 72 72"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g id="appointment">
+            <g id="arrow">
+              <path
+                id="down-arrow"
+                d="M62.5 39.375C62.5 43.375 57.25 50.75 48.625 50.75C42.75 50.75 36.375 50.75 36.375 50.75"
+                stroke="#D8EABE"
+                stroke-width="6"
+              />
+              <path
+                id="top-arrow"
+                d="M20.875 51.0625C14.9375 51.0625 8.875 46.0625 8.875 37.4375C8.875 29.3125 14.375 21.0625 22.8125 21.0625C28.5 21.0625 36.3125 21.0625 36.3125 21.0625"
+                stroke="#94D03B"
+                stroke-width="6"
+              />
+            </g>
+            <g id="head">
+              <path
+                id="Vector"
+                d="M28.8125 50.75L36.375 44.8125V56.25L28.8125 50.75Z"
+                stroke="#D8EABE"
+                stroke-width="6"
+              />
+            </g>
+            <g id="ball">
+              <circle
+                id="Ellipse 1"
+                cx="50.9688"
+                cy="21.0312"
+                r="15.0312"
+                fill="#94D03B"
+              />
+              <path
+                id="Vector 3"
+                d="M52.9375 13.5625H50.125L45.125 17.8125L46.8125 19.8125L50.125 17.125V28.5H52.9375V13.5625Z"
+                fill="white"
+              />
+            </g>
+          </g>
+        </svg>
+
+        <script>
+          const introText = document.querySelectorAll("#appointment path");
+
+          for (let i = 0; i < introText.length; i++) {
+            console.log(`letter ${i} is ${introText[i].getTotalLength()}`);
+          }
+        </script>
+      </div>
+    </div>
+  </body>
+</html>
