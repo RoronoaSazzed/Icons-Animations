@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Marketing Icon</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .parentDiv {
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+      }
+
+      .wrapper {
+        width: 100%;
+        max-width: 1080px;
+      }
+
+      #wand {
+        transform-box: fill-box;
+        transform-origin: center;
+        transform: rotate(-3deg);
+        animation: wand 0.5s ease-in-out 3 alternate forwards;
+      }
+
+      @keyframes wand {
+        0% {
+          transform: rotate(-3deg);
+        }
+        100% {
+          transform: rotate(3deg);
+        }
+      }
+
+      #b-1 {
+        opacity: 0;
+        animation: flash 1s ease-in-out forwards;
+      }
+
+      #b-2 {
+        opacity: 0;
+        animation: flash 1s 0.2s ease-in-out forwards;
+      }
+
+      #b-3 {
+        opacity: 0;
+        animation: flash 1s 0.4s ease-in-out forwards;
+      }
+
+      @keyframes flash {
+        0% {
+          opacity: 0;
+        }
+
+        20% {
+          opacity: 1;
+        }
+
+        40% {
+          opacity: 0;
+        }
+
+        60% {
+          opacity: 1;
+        }
+
+        80% {
+          opacity: 0;
+        }
+
+        100% {
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parentDiv">
+      <div class="wrapper">
+        <svg
+          width="100%"
+          min-height="0"
+          viewBox="0 0 72 72"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g id="digital marketing">
+            <rect
+              id="b-1"
+              x="51.1592"
+              y="36.1796"
+              width="6.25"
+              height="6.25"
+              fill="#D8EABE"
+            />
+            <rect
+              id="b-2"
+              x="60.1027"
+              y="27.1796"
+              width="5.93152"
+              height="5.93152"
+              fill="#D8EABE"
+            />
+            <rect
+              id="b-3"
+              x="63.0685"
+              y="39.3046"
+              width="5.93152"
+              height="5.93152"
+              fill="#D8EABE"
+            />
+            <g id="wand">
+              <rect
+                id="Rectangle 1"
+                x="47.1651"
+                y="9.22955"
+                width="18.2966"
+                height="65.9065"
+                rx="3"
+                transform="rotate(45 47.1651 9.22955)"
+                fill="#94D03B"
+              />
+              <rect
+                id="Rectangle 5"
+                x="47.3636"
+                y="17.7973"
+                width="5.98153"
+                height="15.2419"
+                transform="rotate(45 47.3636 17.7973)"
+                fill="#F5F5F5"
+              />
+            </g>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </body>
+</html>
