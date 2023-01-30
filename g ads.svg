@@ -1,0 +1,31 @@
+<svg width="100%" min-height="72" viewBox="0 0 72 72" fill="none"
+  xmlns="http://www.w3.org/2000/svg">
+  <g id="G ads">
+    <g id="stroke">
+      <path id="bottom" d="M45 64.8125C45.8284 64.8125 46.5 64.1409 46.5 63.3125V60C46.5 59.1716 45.8284 58.5 45 58.5H27.0625C26.2341 58.5 25.5625 59.1716 25.5625 60V63.3125C25.5625 64.1409 26.2341 64.8125 27.0625 64.8125H45Z" stroke="#94D03B" stroke-width="3" stroke-linejoin="round" />
+      <path id="bulb" d="M18 25.6875C18.9331 15.9202 26.2507 9.04595 36.0625 9.0625C45.8743 9.04595 53.1919 15.9202 54.125 25.6875C54.904 33.8416 49.75 39.375 45.0625 43.125L45.0625 51.0625H36.0625H27.0625L27.0625 43.125C22.375 39.375 17.221 33.8416 18 25.6875Z" stroke="#94D03B" stroke-width="6" stroke-linejoin="round" />
+    </g>
+  </g>
+
+  <defs>
+    <style>
+#bottom {
+        stroke-dasharray: 51.92611312866211;
+        stroke-dashoffset: 51.92611312866211;
+        animation: strokeIn 1s ease-in-out forwards;
+      }
+
+      #bulb {
+        stroke-dasharray: 129.19300842285156;
+        stroke-dashoffset: 129.19300842285156;
+        animation: strokeIn 1s ease-in-out forwards;
+      }
+
+      @keyframes strokeIn {
+        100% {
+          stroke-dashoffset: 0;
+        }
+      }
+    </style>
+  </defs>
+</svg>
