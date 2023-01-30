@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practical Growth Icon</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .parentDiv {
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+      }
+
+      .wrapper {
+        width: 100%;
+        max-width: 1080px;
+      }
+
+      #practical-growth {
+        transform-box: fill-box;
+        transform-origin: center;
+        animation: flanke__rotate 2s 1s ease-in-out forwards;
+      }
+
+      @keyframes flanke__rotate {
+        100% {
+          transform: rotate(60deg);
+        }
+      }
+
+      #snow-stroke-1 {
+        stroke-dasharray: 53.875;
+        stroke-dashoffset: 53.875;
+        animation: flankes__in 1s ease-in-out forwards;
+      }
+
+      #snow-stroke-2 {
+        stroke-dasharray: 53.87507247924805;
+        stroke-dashoffset: 53.87507247924805;
+        animation: flankes__in 1s ease-in-out forwards;
+      }
+
+      #snow-stroke-3 {
+        stroke-dasharray: 53.87498474121094;
+        stroke-dashoffset: 53.87498474121094;
+        animation: flankes__in 1s ease-in-out forwards;
+      }
+
+      #snow-flake-1 {
+        stroke-dasharray: 48.984275817871094;
+        stroke-dashoffset: 48.984275817871094;
+        animation: flankes__in 1s ease-in-out forwards;
+      }
+
+      #snow-flake-2 {
+        stroke-dasharray: 48.98435974121094;
+        stroke-dashoffset: 48.98435974121094;
+        animation: flankes__in 1s ease-in-out forwards;
+      }
+
+      #snow-flake-3 {
+        stroke-dasharray: 48.98423767089844;
+        stroke-dashoffset: 48.98423767089844;
+        animation: flankes__in 1s ease-in-out forwards;
+      }
+
+      @keyframes flankes__in {
+        100% {
+          stroke-dashoffset: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parentDiv">
+      <div class="wrapper">
+        <svg
+          width="100%"
+          min-height="0"
+          viewBox="0 0 72 72"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g id="practical-growth">
+            <g id="stroke">
+              <path
+                id="snow-stroke-1"
+                opacity="0.3"
+                d="M35.8677 9.0625V22.8125V50.1875V62.9375"
+                stroke="#94D03B"
+                stroke-width="6"
+                stroke-linejoin="round"
+              />
+              <path
+                id="snow-stroke-2"
+                opacity="0.3"
+                d="M59.1879 22.6707L47.28 29.5457L23.5726 43.2332L12.5307 49.6082"
+                stroke="#94D03B"
+                stroke-width="6"
+                stroke-linejoin="round"
+              />
+              <path
+                id="snow-stroke-3"
+                opacity="0.3"
+                d="M12.4225 22.4543L24.3303 29.3293L48.0378 43.0168L59.0796 49.3918"
+                stroke="#94D03B"
+                stroke-width="6"
+                stroke-linejoin="round"
+              />
+            </g>
+            <g id="flank">
+              <path
+                id="snow-flake-1"
+                opacity="0.3"
+                d="M27.1177 13.6875L35.8677 22.8125L44.3677 13.6875M27.1177 58.4375L35.8677 50.1875L44.3677 58.4375"
+                stroke="#94D03B"
+                stroke-width="6"
+                stroke-linejoin="round"
+              />
+              <path
+                id="snow-flake-2"
+                opacity="0.3"
+                d="M50.8075 17.4055L47.28 29.5457L59.4325 32.3445M12.0529 39.7805L23.5726 43.2332L20.6779 54.7195"
+                stroke="#94D03B"
+                stroke-width="6"
+                stroke-linejoin="round"
+              />
+              <path
+                id="snow-flake-3"
+                opacity="0.3"
+                d="M12.0529 32.3445L24.3303 29.3293L20.6779 17.4055M50.8075 54.7195L48.0378 43.0168L59.4325 39.7805"
+                stroke="#94D03B"
+                stroke-width="6"
+                stroke-linejoin="round"
+              />
+            </g>
+          </g>
+        </svg>
+
+        <script>
+          const introText = document.querySelectorAll("#flank path");
+
+          for (let i = 0; i < introText.length; i++) {
+            console.log(`letter ${i} is ${introText[i].getTotalLength()}`);
+          }
+        </script>
+      </div>
+    </div>
+  </body>
+</html>
