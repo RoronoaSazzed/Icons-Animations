@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ai Automation Icon</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .parentDiv {
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+      }
+
+      .wrapper {
+        width: 100%;
+        max-width: 1080px;
+      }
+
+      #s-1 {
+        stroke-dasharray: 54.59862518310547;
+        stroke-dashoffset: 54.59862518310547;
+        animation: AI__in 1s ease-in-out forwards;
+      }
+
+      #s-2 {
+        stroke-dasharray: 78.47364807128906;
+        stroke-dashoffset: 78.47364807128906;
+        animation: AI__in 1s ease-in-out forwards;
+      }
+
+      #s-3 {
+        stroke-dasharray: 54.59867858886719;
+        stroke-dashoffset: 54.59867858886719;
+        animation: AI__in 1s ease-in-out forwards;
+      }
+
+      @keyframes AI__in {
+        100% {
+          stroke-dashoffset: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parentDiv">
+      <div class="wrapper">
+        <svg
+          width="100%"
+          min-height="0"
+          viewBox="0 0 66 66"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g id="ai automation">
+            <g id="strokes">
+              <path
+                id="s-1"
+                d="M7.49509 20.9688C7.49509 20.9688 19.9951 20.9688 27.9951 20.9688C31.3701 20.9688 34.7096 16.8485 34.4951 12.4688C34.3024 8.53457 32.2451 6.03125 28.5576 6.03125C23.4951 6.03125 22.4326 10.0312 22.4326 15.0312"
+                stroke="#D8EABE"
+                stroke-width="6"
+              />
+              <path
+                id="s-2"
+                d="M7.62009 32.9375C7.62009 32.9375 43.9951 32.9375 51.9951 32.9375C55.3701 32.9375 58.7096 28.8173 58.4951 24.4375C58.3024 20.5033 56.2451 18 52.5576 18C47.4951 18 46.4326 22 46.4326 27"
+                stroke="#94D03B"
+                stroke-width="6"
+              />
+              <path
+                id="s-3"
+                d="M7.49509 45.0312C7.49509 45.0312 19.9951 45.0312 27.9951 45.0312C31.3701 45.0312 34.7096 49.1515 34.4951 53.5312C34.3024 57.4654 32.2451 59.9687 28.5576 59.9688C23.4951 59.9688 22.4326 55.9688 22.4326 50.9688"
+                stroke="#D8EABE"
+                stroke-width="6"
+              />
+            </g>
+          </g>
+        </svg>
+
+        <script>
+          const introText = document.querySelectorAll("#strokes path");
+
+          for (let i = 0; i < introText.length; i++) {
+            console.log(`letter ${i} is ${introText[i].getTotalLength()}`);
+          }
+        </script>
+      </div>
+    </div>
+  </body>
+</html>
