@@ -1,0 +1,101 @@
+<svg width="100%" min-height="0" viewBox="0 0 105 105" fill="none"
+    xmlns="http://www.w3.org/2000/svg">
+    <g id="reach icon">
+        <g id="strokes">
+            <path id="s-1" d="M48.75 42.25L42 27.25" stroke="url(#paint0_linear_2_2)" stroke-width="6" />
+            <path id="s-2" d="M63.75 48.75L77.125 43.625" stroke="url(#paint1_linear_2_2)" stroke-width="6" />
+            <path id="s-3" d="M62.4892 59.0444L79.2608 72.2055" stroke="url(#paint2_linear_2_2)" stroke-width="6" />
+            <path id="s-4" d="M44.1822 59.6983L26.9428 75.1767" stroke="url(#paint3_linear_2_2)" stroke-width="6" />
+        </g>
+        <circle id="e-1" cx="37.2969" cy="17.0469" r="11.7031" stroke="#94D03B" stroke-width="5" />
+        <circle id="e-c" cx="53.0001" cy="52" r="11.7031" stroke="#70A91C" stroke-width="5" />
+        <circle id="e-2" cx="88.0001" cy="40.4531" r="11.7031" stroke="#94D03B" stroke-width="5" />
+        <circle id="e-3" cx="88.0001" cy="78.9531" r="11.7031" stroke="#70A91C" stroke-width="5" />
+        <circle id="e-4" cx="18.0001" cy="82.9531" r="11.7031" stroke="#70A91C" stroke-width="5" />
+    </g>
+    <defs>
+        <linearGradient id="paint0_linear_2_2" x1="45.375" y1="27.25" x2="45.375" y2="42.25" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#94D03B" />
+            <stop offset="1" stop-color="#70A91C" />
+        </linearGradient>
+        <linearGradient id="paint1_linear_2_2" x1="70.4375" y1="43.625" x2="70.4375" y2="48.75" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#94D03B" />
+            <stop offset="1" stop-color="#70A91C" />
+        </linearGradient>
+        <linearGradient id="paint2_linear_2_2" x1="70.7375" y1="58.8764" x2="71.0125" y2="72.3736" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#94D03B" />
+            <stop offset="1" stop-color="#70A91C" />
+        </linearGradient>
+        <linearGradient id="paint3_linear_2_2" x1="35.747" y1="59.5021" x2="35.378" y2="75.3729" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#94D03B" />
+            <stop offset="1" stop-color="#70A91C" />
+        </linearGradient>
+
+        <style>
+#e-1,
+      #e-2,
+      #e-3,
+      #e-4,
+      #e-5 {
+        transform-box: fill-box;
+        transform-origin: center;
+      }
+
+      #e-1 {
+        transform: translate(15.5px, 35px);
+        animation: circle__in 1s ease-in-out forwards;
+      }
+
+      #e-2 {
+        transform: translate(-35px, 11.5px);
+        animation: circle__in 1s ease-in-out forwards;
+      }
+
+      #e-3 {
+        transform: translate(-35px, -27px);
+        animation: circle__in 1s ease-in-out forwards;
+      }
+
+      #e-4 {
+        transform: translate(35px, -31px);
+        animation: circle__in 1s ease-in-out forwards;
+      }
+
+      @keyframes circle__in {
+        100% {
+          transform: translate(0px, 0px);
+        }
+      }
+
+      #s-1 {
+        stroke-dasharray: 16.44878387451172;
+        stroke-dashoffset: 16.44878387451172;
+        animation: strokes__in 1s ease-in-out 0.2s forwards;
+      }
+
+      #s-2 {
+        stroke-dasharray: 14.32327651977539;
+        stroke-dashoffset: 14.32327651977539;
+        animation: strokes__in 1s ease-in-out 0.2s forwards;
+      }
+
+      #s-3 {
+        stroke-dasharray: 21.319032669067383;
+        stroke-dashoffset: 21.319032669067383;
+        animation: strokes__in 1s ease-in-out 0.2s forwards;
+      }
+
+      #s-4 {
+        stroke-dasharray: 23.16846466064453;
+        stroke-dashoffset: 23.16846466064453;
+        animation: strokes__in 1s ease-in-out 0.2s forwards;
+      }
+
+      @keyframes strokes__in {
+        100% {
+          stroke-dashoffset: 0;
+        }
+      }
+        </style>
+    </defs>
+</svg>
