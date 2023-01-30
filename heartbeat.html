@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Heartbeat Icon</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .parentDiv {
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+      }
+
+      .wrapper {
+        width: 100%;
+        max-width: 1080px;
+      }
+
+      #beat {
+        stroke-dasharray: 237.39427185058594;
+        stroke-dashoffset: -237.39427185058594;
+        animation: beatIn 1s ease-in-out forwards;
+      }
+
+      @keyframes beatIn {
+        100% {
+          stroke-dashoffset: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parentDiv">
+      <div class="wrapper">
+        <svg
+          width="100%"
+          min-height="0"
+          viewBox="0 0 144 144"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g id="heart beat">
+            <g id="stroke">
+              <path
+                id="beat"
+                d="M123.667 66.8333H103L87.4999 113.333L56.4999 20.3333L40.9999 66.8333H20.3333"
+                stroke="url(#paint0_linear_2_12)"
+                stroke-width="9"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </g>
+          </g>
+          <defs>
+            <linearGradient
+              id="paint0_linear_2_12"
+              x1="71.9999"
+              y1="20.3333"
+              x2="71.9999"
+              y2="113.333"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#94D03B" />
+              <stop offset="1" stop-color="#70A91C" />
+            </linearGradient>
+          </defs>
+        </svg>
+        <script>
+          const introText = document.querySelectorAll("#stroke path");
+
+          for (let i = 0; i < introText.length; i++) {
+            console.log(`letter ${i} is ${introText[i].getTotalLength()}`);
+          }
+        </script>
+      </div>
+    </div>
+  </body>
+</html>
